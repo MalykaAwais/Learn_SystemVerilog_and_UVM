@@ -14,20 +14,23 @@ module tb_d_ff ();
 
 initial 
   begin 
-  //$dumpfile("dump.vcd");
-  //$dumpvars(1);
+  $dumpfile("dump.vcd");
+  $dumpvars(1);
     clk =1;
     rstn = 0; 
     data = 0;
 end 
 always #10 clk = ~clk;
-  always
+
+initial
 begin 
-     
     #100 rstn = 1; 
     #50 data = 1; 
     #80 data = 0; 
     #20 data = 1; 
-    #100 data = 0; 
-    end 
+    #100 data = 0;
+  #100
+  $finish;
+end 
+
 endmodule 
