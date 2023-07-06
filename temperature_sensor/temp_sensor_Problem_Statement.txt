@@ -1,0 +1,18 @@
+---------
+Design:
+---------
+
+Temperature Sensor Interface:
+- Design an optimized RTL Verilog module for interfacing with a temperature sensor. The module should include the following functionalities:
+1) Receive temperature data from the sensor.
+2) Convert temperature to celcius.
+3) Provide output signal indicating temperature exceeds a specific threshold.
+
+---------
+Testbench 
+---------
+- Create a testbench module that
+1) instantiate temperature sensor module.
+2) Generate stimulus to simulate sensor data.
+3) Verify Functionality of module by comparing output reading with expected value.
+4) Capture and log relevant information during simulation.
