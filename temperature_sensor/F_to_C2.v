@@ -22,7 +22,7 @@ module F_to_C2(
 
   always @* begin
     sub = temp_in_F - 32;
-    ans = (sub * 5) / 9;
+    ans = (sub * 5) / 9;    //Division by 9 is not allowed on hardware, hence either approximate it or add division core for it 
   end
 
 endmodule
