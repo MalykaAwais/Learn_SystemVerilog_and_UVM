@@ -1,0 +1,10 @@
+Test Bench of 1-Bit Adder Design Problem:
+
+Design a test bench for a 1-bit adder module. The module takes two input bits (A and B) and produces a sum (S) and carry-out (Cout) as outputs. Implement the test bench using an enumeration to define the possible test cases. The test bench should perform the following:
+
+Define an enumeration with four test cases: ADD_0, ADD_1, ADD_10, and ADD_11.
+Initialize the inputs A and B with the test case values based on the enumeration.
+Apply the test case values to the adder module inputs.
+Verify that the sum (S) and carry-out (Cout) outputs of the adder module match the expected results for each test case.
+Display a message indicating whether the adder module passed or failed each test case.
+Design the test bench using SystemVerilog and incorporate assertions or if-else statements to check the expected results and display appropriate messages.
