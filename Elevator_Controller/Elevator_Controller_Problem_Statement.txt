@@ -1,0 +1,37 @@
+
+
+Design Problem: Elevator Controller
+
+
+-------------
+Design
+-------------
+
+Design an elevator controller module for a multi-floor building. The elevator controller should support the following functionalities:
+
+- The elevator can move between multiple floors, starting from a designated floor.
+- The elevator can handle requests from passengers to go to specific floors.
+- The elevator should follow a simple scheduling algorithm to efficiently serve passenger requests.
+- The elevator should have a state machine to control its movements and door operations.
+
+Your task is to design a testbench for the elevator controller module. Use an enumeration data type to represent the different states of the elevator (Idle, Moving, DoorOpen, etc.). Your testbench should:
+
+- Instantiate the elevator controller module.
+- Generate random passenger requests to simulate different floor requests.
+Monitor the outputs of the elevator controller module to ensure that it moves to the correct floors and operates the doors correctly.
+Verify that the elevator follows the expected state transitions according to the passenger requests and elevator algorithm.
+Hint: Use an enumeration to define the states of the elevator and use randomization or a stimulus generator to simulate passenger requests to different floors.
+
+This design problem requires the use of an enumeration in the testbench to represent the different states of the elevator. You can define an enumeration for the elevator states (Idle, Moving, DoorOpen, etc.) and use it to model and verify the behavior of the elevator controller module in the testbench.
+
+
+
+In this design, the `ElevatorController` module implements an elevator controller state machine. It has inputs `passengers_waiting` and `floor_no_request`, and outputs `elevator_direction`, `door_open_signal`, `door_closed_signal`, `floor_reached_signal`, and `passengers_present`.
+
+The module uses an enumeration to define the states of the elevator controller: `IDLE`, `DOOR_OPEN`, `MOVING_UPWARDS`, `MOVING_DOWNWARDS`, and `FLOOR_REACHED`. The current state is stored in the `current_state` register, and the next state is determined based on the current state and the input conditions.
+
+The outputs of the module are assigned based on the current state using a `case` statement. Each state defines the values for `elevator_direction`, `door_open_signal`, `door_closed_signal`, `floor_reached_signal`, and `passengers_present`.
+
+The state transitions are defined in the second `always` block, which is triggered on the positive edge of the clock (`posedge clk`). The state transitions depend on the current state and the input conditions (`passengers_waiting` and `floor_no_request`).
+
+Finally, the current state is updated in the third `always` block, also triggered on the positive edge of the clock. The `current_state` register is updated with the value of the `next_state`.
