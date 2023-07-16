@@ -1,0 +1,18 @@
+Design Problem: Age-Adaptive Learning Sensor - Math Quiz
+
+-------------
+Design
+-------------
+
+
+Design a math quiz activity for the Age-Adaptive Learning Sensor. 
+The quiz should be designed to adapt to different age groups and provide age-appropriate math questions. 
+The sensor should present the questions, accept user input for answers, and provide feedback on the correctness of the answers.
+
+Specifications:
+
+The quiz should include addition, subtraction, and multiplication questions.
+The difficulty level of the questions should adjust based on the age group of the user.
+For younger age groups (e.g., 5-8 years), the quiz should focus on simple addition and subtraction problems with single-digit numbers.
+For older age groups (e.g., 9-12 years), the quiz should include more complex addition, subtraction, and multiplication problems with double-digit numbers.
+The quiz should provide a random selection of questions from the relevant difficulty level for each age group.
