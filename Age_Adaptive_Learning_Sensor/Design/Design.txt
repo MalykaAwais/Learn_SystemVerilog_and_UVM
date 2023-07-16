@@ -1,0 +1,5 @@
+- The "LFSR_v4_new.v" is used to generate random numbers for Maths quiz question
+and then these numbers are passed to main module for further manipulation
+- The top level module selects operation and numbers on basis of age group 
+- age group 5 - 8 are given easy questions for single digit numbers
+- age group 9 - 12 are given easy questions for single digit numbers
