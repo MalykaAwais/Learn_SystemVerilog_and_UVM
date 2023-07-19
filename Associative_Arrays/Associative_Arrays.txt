@@ -1,0 +1,5 @@
+The purpose of this directory is to understand: 
+                    1) the use case of associative arrays
+                    2) associative array methods
+                    3) How dynamic arrays of associative arrays can be created
+                    4) How we can create dynamic arrays inside the indexes of the associative arrays
