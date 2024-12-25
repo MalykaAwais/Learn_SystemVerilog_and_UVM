@@ -59,7 +59,7 @@ Welcome to my Verilog and SystemVerilog practice repository! This repository con
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/malyka/SystemVerilog-UVM.git
+   git clone https://github.com/MalykaAwais/SystemVerilog-UVM.git
    ```
 2. Navigate to the relevant module directory.
 3. Run the simulation files with your preferred simulator.
