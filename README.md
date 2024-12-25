@@ -56,6 +56,10 @@ Welcome to my Verilog and SystemVerilog practice repository! This repository con
 - **Simulation**: ModelSim, Xilinx Vivado
 - **Verification**: eda playground
 - **Version Control**: Git and GitHub
+  
+## Technologies
+![SystemVerilog](https://img.shields.io/badge/-SystemVerilog-3776AB?style=flat-square&logo=systemverilog&logoColor=white)
+![UVM](https://img.shields.io/badge/-UVM-3776AB?style=flat-square&logo=uvm&logoColor=white)
 
 ## How to Use
 1. Clone the repository:
