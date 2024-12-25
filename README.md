@@ -2,8 +2,6 @@
 
 Welcome to my Verilog and SystemVerilog practice repository! This repository contains my implementations and experiments with fundamental and advanced concepts in Verilog and SystemVerilog. Below is a detailed overview of the contents and purpose of each module.
 
-## Repository Structure
-
 ### 1. **Basic Verilog Constructs**
    - **Description**: Covers the foundational constructs of Verilog, including modules, procedural blocks, and data types.
    - **Topics**:
@@ -15,9 +13,6 @@ Welcome to my Verilog and SystemVerilog practice repository! This repository con
    - **Description**: Implementation and simulation of basic flip-flops for sequential logic.
    - **Topics**:
      - D Flip-Flop
-     - T Flip-Flop
-     - JK Flip-Flop
-     - SR Flip-Flop
      - Edge-triggered and level-triggered designs
 
 ### 3. **Finite State Machines (FSMs)**
@@ -25,15 +20,13 @@ Welcome to my Verilog and SystemVerilog practice repository! This repository con
    - **Topics**:
      - Moore and Mealy Machines
      - State encoding (binary, gray, one-hot)
-     - Traffic light controller example
-     - FSM for sequence detection
+     - Elevator controller example
 
 ### 4. **Barrel Shifter**
    - **Description**: A 4x1 multiplexer-based implementation of a barrel shifter for bitwise manipulation.
    - **Features**:
      - Left and right shifts
-     - Rotations
-     - Parametrizable design
+     - Rotation
 
 ### 5. **SystemVerilog Constructs**
    - **Description**: Exploration of advanced SystemVerilog constructs for design and verification.
@@ -44,16 +37,29 @@ Welcome to my Verilog and SystemVerilog practice repository! This repository con
      - **Enums**: Enumeration types for state and signal representation
      - **Mailbox**: Inter-thread communication
      - **Interfaces and Modports**: Efficient design connectivity and access control
+       
+### 6. **Layered Testbench for Adder**
+   - **Description**: Implementation of a layered testbench for verifying an adder module.
+   - **Features**:
+     - Driver, monitor, and scoreboard components
+     - Transaction-based verification approach.
+
+### 7. **UVM Testbench for Adder**
+   - **Description**: Development of a Universal Verification Methodology (UVM) testbench for an adder module.
+   - **Features**:
+     - UVM components such as agent, environment, and sequence.
+     - Reusable verification IP.
+     - Randomized stimulus.
 
 ## Tools Used
 - **Simulation**: ModelSim, Xilinx Vivado
-- **Synthesis**: Synopsys Design Compiler, Quartus
+- **Verification**: eda playground
 - **Version Control**: Git and GitHub
 
 ## How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/verilog-practice.git
+   git clone https://github.com/malyka/SystemVerilog-UVM.git
    ```
 2. Navigate to the relevant module directory.
 3. Run the simulation files with your preferred simulator.
