@@ -27,7 +27,6 @@ Welcome to my Verilog and SystemVerilog practice repository! This repository con
    - **Features**:
      - Left and right shifts
      - Rotation
-     - Age adaptive learning sensor
 
 ### 5. **SystemVerilog Constructs**
    - **Description**: Exploration of advanced SystemVerilog constructs for design and verification.
